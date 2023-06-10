@@ -16,39 +16,45 @@ tulsa();
 function red() {
   let color = prompt('Do I like the color Red?').toUpperCase();
   if (color === 'YES' || color === 'Y') {
-  userPoints++;
-  alert ('You are correct');
+    userPoints++;
+    alert('You are correct');
   } else {
-    alert ('You are incorrect');
+    alert('You are incorrect');
   }
 }
 red();
 // Jon completed line 16-22 as the driver;
 
-let education = prompt('Did I graduate from Middle Tennesee State University?');
-education = education.toUpperCase();
-// console.log(education)
-if (education === 'NO') {
-  //console.log ("No. I do not");
-  alert('You are wrong');
-} else if (education === 'YES' || education === 'Y') {
-  //console.log ("You're Right");
-  alert("You're Right");
+function school() {
+  let education = prompt(
+    'Did I graduate from Middle Tennesee State University?'
+  ).toUpperCase();
+  if (education === 'YES' || education === 'Y') {
+    userPoints++;
+    alert('You are correct');
+  } else {
+    alert('You are incorrect');
+  }
 }
-//alert (person);
-// let color = promp()
-let peace = prompt('Do I like Nashville?');
-peace = peace.toUpperCase();
-// console.log(peace)
-if (peace === 'NO') {
-  //console.log ("No. I do not");
-  alert('You are wrong');
-} else if (peace === 'YES' || peace === 'Y') {
-  //console.log ("You're Right");
-  alert("You're Right");
+school();
+// Jon completed lines 28 - 37 as the driver;
+
+function city() {
+  let peace = prompt('Do I like Nashville?').toUpperCase();
+  if (peace === 'YES' || peace === 'Y') {
+    userPoints++;
+    alert('You are correct');
+  } else if (peace === 'NO' || peace === 'N') {
+    alert('You are incorrect');
+  } else if (peace === 'MAYBE') {
+    alert('You need to be sure of yourself');
+  } else {
+    alert('What is wrong with you?');
+  }
 }
-//alert (person);
-// let color = promp()
+city();
+// Jon completed lines 40-53 as the driver;
+
 let people = prompt('Do I like Animals?');
 people = people.toUpperCase();
 // console.log(person)
